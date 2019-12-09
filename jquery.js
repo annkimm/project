@@ -6,9 +6,9 @@ function selector(el){
     let str=el.slice(1);
 
     if(el[0] === "#"){
-      return console.log(document.getElementById(str));
+      return document.getElementById(str);
     }else if(el[0] === "."){
-      return console.log(document.getElementsByClassName(str));
+      return document.getElementsByClassName(str);
     }else{
       return
     }
@@ -31,11 +31,11 @@ function selector(el){
       if(cur[0] === "#"){
         idArr.push(cur.slice(1))
         //obj["id"]=idArr;
-        return console.log(document.getElementById(cur.slice(1)))
+        return document.getElementById(cur.slice(1));
       }else if(cur[0] === "."){
 
         classArr.push(cur.slice(1))
-        return console.log(document.getElementsByClassName(cur.slice(1)))
+        return document.getElementsByClassName(cur.slice(1));
         //obj["class"]=classArr;
       }
 
